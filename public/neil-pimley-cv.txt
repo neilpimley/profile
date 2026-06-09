@@ -1,0 +1,124 @@
+Neil Pimley
+Agentic Software Engineer
+Greater London, England, United Kingdom
+Industry: Software Development
+
+Profile
+Fullstack developer with 20 years' experience in the fintech and healthcare sectors in both large corporations and startups; experience with scrum and agile methodologies delivering functionality to production in short sprints. Extensive experience delivering solutions both on the .NET platform and using multiple JavaScript frameworks and libraries. Skilled in UI development, web services, databases, OO design following SOLID principles, systems integration and implementation of significant projects from both an applications development and business process perspective.
+
+Evidence from supplied LinkedIn export
+- 20 years' experience in fintech and healthcare
+- Large corporation and startup environments
+- Scrum and agile delivery in short production-focused sprints
+- .NET platform delivery
+- Multiple JavaScript frameworks and libraries
+- UI development, web services, databases and systems integration
+- OO design following SOLID principles
+- Significant project implementation from application development and business process perspectives
+
+Experience
+
+Software Engineer
+Anglo American · Contract
+Sep 2022 - Present · 3 yrs 10 mos
+London Area, United Kingdom
+Integration Engineer | .NET & Salesforce | Azure Cloud.
+Developing and maintaining a cloud-native CRM integration platform connecting trading systems with Salesforce CRM. Key skills applied:
+- Backend: C# / .NET (ASP.NET Core, Clean Architecture, CQRS pattern, NUnit/NSubstitute)
+- Salesforce: Apex, Lightning Web Components (LWC), Salesforce DX, REST API integration, OAuth
+- Azure: App Services, Event Hub, Key Vault, Azure DevOps (Pipelines, Repos, Boards)
+- Integration patterns: Event-driven architecture, async job queues, REST API design
+- AI/ML: OpenAI API integration, Azure Computer Vision
+- Frontend: JavaScript, HTML, Jest unit testing, ESLint, Prettier
+- DevOps: CI/CD pipelines, SonarQube, branch strategies, environment management (Dev/Test/UAT/Prod)
+- Security: Role-based access control (RBAC), OAuth 2.0, Azure App Registrations
+
+Software Engineer - Anglo American Supply Chain Manager (Core.SCM)
+Developing and maintaining Core.SCM, Anglo American's enterprise Supply Chain Management platform — a full-stack application built with Angular 17 and .NET C# serving commodity trading and logistics operations globally.
+Key contributions include:
+- Platform modernisation — Led the full solution upgrade from .NET 8 to .NET 10 across the SCM API, Integration API, and Security projects, including resolving NuGet dependency conflicts, fixing breaking compiler changes, and updating Azure DevOps CI/CD pipelines
+- PI System data integration — Investigated and resolved connectivity failures in containerised CQ data feeds that pull process data from PI Web API; implemented structured diagnostic tooling and Azure Monitor (KQL) queries for root-cause analysis in Container Apps
+- Bug fixes & feature delivery — Delivered fixes for the PGM Sales LE Cash Utilisation tool, resolving missing cash inflow data for the trading desk
+- Developer tooling — Established GitHub Copilot CLI workflows with custom agents for automated Azure DevOps user story creation and end-to-end test infrastructure upgrades
+Stack: Angular, .NET/C#, Azure (Container Apps, Key Vault, SignalR, App Configuration), SQL Server, Azure DevOps
+
+Board Member
+London Irish Business Society · Freelance
+Apr 2020 - Mar 2025 · 5 yrs
+Greater London, England, United Kingdom
+Contributing to digital strategy and leading build of new website.
+
+Squad Tech Lead
+Rabobank · Contract
+Feb 2021 - Sep 2022 · 1 yr 8 mos
+Utrecht, Netherlands
+
+Senior Software Engineer
+Rabobank · Contract
+Feb 2018 - Jan 2021 · 3 yrs
+London
+Developer on a greenfield project to create a Client Onboarding / KYC application for the bank's global client base following domain driven design principles, microservices architecture and agile methodologies. Angular 5 / SASS / webpack front end. Karma, Jasmine JEST testing. C# Web Api, unity for DI. BDD - specflow, TDD - MS Test. Dapper for DB layer. TFS for CD/CI.
+
+Software Engineer
+ipagoo
+Apr 2017 - Feb 2018 · 11 mos
+London, United Kingdom
+Full stack developer in an exciting startup which had just launched it's core product offering the first ever pan-European current account service, allowing individuals and companies to hold accounts in as many countries as they need. Tech stack AngularJS, WebApi, C#, SQL Server.
+
+Senior Software Developer
+First Derivative · Full-time
+Mar 2016 - Apr 2017 · 1 yr 2 mos
+Greater London, England, United Kingdom
+On site developer with MUFG, Barclays and Investec.
+
+Senior Software Developer
+First Derivative
+Jan 2015 - Mar 2016 · 1 yr 3 mos
+Belfast Metropolitan Area
+Developer on a HTML5 dashboard application to provide rich visualization of both real-time streaming data and highly optimized polled queries on intra-day and historical data. Utilized BackboneJS, NodeJS, GULP, SASS.
+
+Senior Software Developer
+CIS Oncology
+Jan 2012 - Mar 2015 · 3 yrs 3 mos
+Belfast Metropolitan Area
+Key member of a small team that re-platforming the company's core legacy Visual FoxPro application into a mobile optimized, Metro UI style, HTML5 application using KnockoutJS, LESS, Typescipt, .NET, MVC, C#, SQL Server.
+
+Software Engineer
+SopraSteria
+Mar 2007 - Apr 2012 · 5 yrs 2 mos
+Supported a Microsoft Dynamics CRM solution including developing web integrated applications in C#.
+Developed web front end and web service to integrate with Microsoft Exchange and Active directory to enable all GP's in NI to save security questions against their accounts and use the date to allow automated password resets.
+Developed web service to allow care providers to integrate with Northern Ireland's Patient Administration System.
+Contracted to work on Ulster Bank's Retail Website working with BlueCube Interactive to develop a website based on an existing RBS platform.
+
+Consultant
+British Judo Association
+Sep 2002 - Sep 2010 · 8 yrs 1 mo
+Developed website for Sports NGB in 2002 which was live up to 2011. Provided support and consultancy.
+In 2010 consulted on development of eCommerce presence, reserching and choosing application and hiring freelance developers http://www.judostore.co.uk/
+
+Computer Programmer
+TotalMobile Ltd
+Mar 2007 - Sep 2008 · 1 yr 7 mos
+Developer of web based application used by local government and housing associations. Applications developed in C# .NET, SQL Server/Oracle employing web service and xml integration technologies.
+
+Application Developer
+Santander UK Corporate & Commercial
+Jan 2000 - Jan 2005 · 5 yrs 1 mo
+Member of small team who developed Abbey International's Internet Banking System.
+
+Honors & Awards
+
+Best Overall Hack £10k Top Prize in Santander Open Banking Hackathon 2018
+Issued by Santander / The Open Banking Project · Mar 2018
+In a team with 2 others our voice enabled banking application was awarded the £10,000 prize for Best Overall Hack in a Hackathon run by Santander and The Open Banking Project (https://santanderhackathon.co.uk/)
+
+Published LinkedIn articles included in export
+- Filling a Payments Gap - Request to Pay and PSD2
+- Strong Customer Authentication - PSD2
+- Open Banking with Unexpect Twist - PSD2
+- Who bought what, when and where - PSD2 Enhanced Data
+- I've just agreed to what?! PSD2 and Retail Banking Customers
+
+Note
+The supplied profile details do not include education or formal qualifications.
