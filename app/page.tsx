@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
-import { articles, awards, experience, profile, projects } from "@/data/profile";
+import { articles, awards, education, experience, personalProjects, profile, projects } from "@/data/profile";
 
-const navItems = ["Profile", "Experience", "Projects", "Writing", "Contact"];
+const navItems = ["Profile", "Experience", "Education", "Projects", "Personal", "Writing", "Contact"];
 
 const metrics = [
   { label: "Years in software", value: "20+" },
@@ -13,7 +14,9 @@ const metrics = [
 
 const spotlightTags = [
   "C# / .NET",
+  "Angular",
   "Azure DevOps",
+  "GitHub Copilot CLI",
   "Salesforce integration",
   "Enterprise architecture",
   "Cloud platforms",
@@ -59,7 +62,7 @@ export default function Home() {
               {profile.headline}
             </span>
             <span className="rounded-full border border-white/10 bg-white/6 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">
-              {profile.location}
+              Based in Belfast · Remote in Greater London
             </span>
           </div>
 
@@ -96,11 +99,42 @@ export default function Home() {
               Explore project work
             </a>
           </div>
+
+          <div className="mt-6 flex flex-wrap gap-3 text-sm">
+            <a
+              href="https://github.com/neilpimley"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/10 bg-white/6 px-4 py-2 font-medium text-[var(--foreground-soft)] transition hover:border-[var(--accent)] hover:text-[var(--foreground)]"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/neilpimley/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/10 bg-white/6 px-4 py-2 font-medium text-[var(--foreground-soft)] transition hover:border-[var(--accent)] hover:text-[var(--foreground)]"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         <div className="animate-enter-delayed">
           <div className="panel-edge overflow-hidden rounded-md">
             <div className="panel-surface p-6">
+              <div className="mb-6 overflow-hidden rounded-md border border-white/10 bg-black/20">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src="/profile.jfif"
+                    alt="Portrait of Neil Pimley"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 32rem, 100vw"
+                  />
+                </div>
+              </div>
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">
@@ -110,19 +144,17 @@ export default function Home() {
                     Integration-heavy platform engineering
                   </h2>
                 </div>
-                <span className="rounded-full border border-emerald-300/25 bg-emerald-300/10 px-3 py-1 text-xs font-semibold text-emerald-200">
-                  Available for contract work
-                </span>
               </div>
 
               <div className="mt-6 grid gap-4">
                 <div className="rounded-md border border-white/8 bg-black/16 p-4">
                   <p className="text-sm font-semibold text-[var(--foreground)]">
-                    Anglo American / Core.SCM
+                    CRM Integration Platform
                   </p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Full-stack Angular 17 and .NET delivery across supply-chain, logistics and
-                    commodity trading operations, with Azure-backed diagnostics and CI/CD upgrades.
+                    Cloud-native .NET, Salesforce and Azure integration work connecting trading
+                    systems with CRM, using event-driven patterns, secure OAuth flows and
+                    production CI/CD delivery.
                   </p>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -185,15 +217,6 @@ export default function Home() {
               </article>
             ))}
           </div>
-          {profile.requestedButNotInExport.length > 0 ? (
-            <div className="mt-8 rounded-md border border-amber-300/20 bg-amber-300/8 p-5 text-amber-50">
-              <h3 className="font-semibold">Still intentionally excluded</h3>
-              <p className="mt-2 text-sm leading-6 text-amber-100/80">
-                {profile.requestedButNotInExport.join(", ")} are not shown as capabilities because
-                the supplied source material does not support them directly.
-              </p>
-            </div>
-          ) : null}
         </div>
       </section>
 
@@ -251,6 +274,34 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="education" className="section-shell">
+        <div className="mx-auto max-w-7xl px-5 py-24">
+          <div className="mb-12 max-w-3xl">
+            <p className="section-kicker">Education</p>
+            <h2 className="section-title">Academic background and extracurricular achievement</h2>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-2">
+            {education.map((item) => (
+              <article key={`${item.institution}-${item.qualification}`} className="project-card">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+                  {item.detail}
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold text-[var(--foreground)]">{item.institution}</h3>
+                <p className="mt-3 text-lg text-[var(--foreground-soft)]">{item.qualification}</p>
+                {item.dates ? <p className="mt-2 text-sm text-[var(--muted)]">{item.dates}</p> : null}
+                {item.notes.length ? (
+                  <div className="mt-5 grid gap-2 text-sm leading-6 text-[var(--muted)]">
+                    {item.notes.map((note) => (
+                      <p key={note}>{note}</p>
+                    ))}
+                  </div>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="projects" className="section-shell">
         <div className="mx-auto max-w-7xl px-5 py-24">
           <div className="mb-12 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
@@ -287,14 +338,67 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="personal" className="mx-auto max-w-7xl px-5 py-24">
+        <div className="mb-12 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <p className="section-kicker">Personal Projects</p>
+            <h2 className="section-title">Independent web work outside enterprise delivery</h2>
+          </div>
+          <p className="max-w-xl text-sm leading-6 text-[var(--muted)]">
+            This section is kept separate from large commercial platforms so smaller owner-led
+            builds have their own context.
+          </p>
+        </div>
+        <div className="grid gap-5 lg:grid-cols-2">
+          {personalProjects.map((project) => (
+            <article key={project.title} className="project-card">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+                    {project.type}
+                  </p>
+                  <h3 className="mt-4 text-2xl font-semibold text-[var(--foreground)]">{project.title}</h3>
+                </div>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm font-medium text-[var(--foreground-soft)] transition hover:border-[var(--accent)] hover:text-[var(--foreground)]"
+                >
+                  Visit site
+                </a>
+              </div>
+              <p className="mt-5 leading-7 text-[var(--muted)]">{project.detail}</p>
+              <p className="mt-4 leading-7 text-[var(--foreground-soft)]">{project.technicalDetail}</p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-white/10 bg-white/6 px-3 py-1.5 text-xs font-medium text-[var(--foreground-soft)]"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="writing" className="mx-auto max-w-7xl px-5 py-24">
         <div className="mb-12">
           <p className="section-kicker">Writing</p>
           <h2 className="section-title">Open banking and PSD2 articles</h2>
         </div>
-        <div className="grid gap-5 lg:grid-cols-2">
+          <div className="grid gap-5 lg:grid-cols-2">
           {articles.map((article) => (
-            <Link key={article.slug} href={`/blog/${article.slug}`} className="writing-card">
+            <a
+              key={article.slug}
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="writing-card"
+            >
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
                 {article.topic}
               </p>
@@ -304,9 +408,9 @@ export default function Home() {
                 <span className="text-[var(--foreground-soft)]">
                   {article.published ? `Published ${article.published}` : `Created ${article.created}`}
                 </span>
-                <span className="text-[var(--accent)]">Read article</span>
+                <span className="text-[var(--accent)]">View on LinkedIn</span>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </section>
@@ -318,8 +422,15 @@ export default function Home() {
               <p className="section-kicker">Contact</p>
               <h2 className="section-title max-w-lg">Start the next platform, integration or modernisation conversation.</h2>
               <p className="mt-5 max-w-lg leading-7 text-[var(--muted)]">
-                The form is wired to a server action and ready for an email or CRM delivery target.
-                The visual treatment here is deliberate: simple, direct and built for serious work.
+                Reach me directly at{" "}
+                <a
+                  href="mailto:neilpimley@gmail.com"
+                  className="font-semibold text-[var(--accent)] transition hover:text-[var(--accent-strong)]"
+                >
+                  neilpimley@gmail.com
+                </a>
+                . The form is also wired to a server action and ready for an email or CRM delivery
+                target.
               </p>
             </div>
             <div className="panel-surface p-8 lg:p-10">

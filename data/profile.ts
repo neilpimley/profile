@@ -19,7 +19,7 @@ export const profile = {
     {
       title: "C# / .NET Development",
       detail:
-        "Roles cite C#, .NET, ASP.NET Core, Web API, MVC, Clean Architecture, CQRS, NUnit, NSubstitute and SQL Server delivery.",
+        "Roles cite C#, .NET, ASP.NET Core, ASP.NET Web API, MVC, Clean Architecture, CQRS, NUnit, NSubstitute, .NET Framework 4.7.2 and SQL Server delivery.",
     },
     {
       title: "Azure DevOps and Azure Cloud",
@@ -39,7 +39,7 @@ export const profile = {
     {
       title: "Systems and CRM Integration",
       detail:
-        "SopraSteria work includes Microsoft Dynamics CRM support, Microsoft Exchange and Active Directory integration, Patient Administration System integration and Ulster Bank retail website work.",
+        "Experience includes Microsoft Dynamics CRM, Active Directory, FileNet, Dow Jones screening, RiskShield, AMLDC, Patient Administration System integration and Ulster Bank retail website work.",
     },
     {
       title: "Technical Leadership",
@@ -49,7 +49,7 @@ export const profile = {
     {
       title: "CI/CD and DevOps Delivery",
       detail:
-        "Experience cites Azure DevOps CI/CD pipelines, SonarQube, branch strategies, environment management and TFS for CD/CI.",
+        "Experience cites Azure DevOps CI/CD pipelines, SonarQube, branch strategies, environment management, TFS for CD/CI, telemetry, logging and deployment tooling.",
     },
     {
       title: "AI and Cloud Integration",
@@ -111,6 +111,23 @@ export const experience = [
     duration: "3 yrs",
     location: "London",
     details: [
+      "Worked on Rabobank's Global Client Onboarding Case Service, an enterprise ASP.NET Web API backend supporting KYC, AML, client lifecycle, case management, document handling, screening, approvals and regulatory onboarding workflows for a separate Angular SPA.",
+      "Contributed to a large .NET Framework 4.7.2 service-oriented codebase using C#, ASP.NET Web API, SQL Server, Dapper, NServiceBus, Hangfire, Elasticsearch, SignalR/Redis, Swagger, Serilog, Splunk and Application Insights.",
+      "Integrated with services including FileNet, Dow Jones screening, RiskShield, AMLDC, Active Directory, reference data, PDF generation and external messaging.",
+      "Developed and maintained backend APIs for global client onboarding, KYC/AML case workflows, work-item management, document processing, risk assessment, screening results, approvals and sign-off journeys.",
+      "Built and supported event-driven integrations using NServiceBus, SQL persistence, background processing and domain-event patterns across multiple onboarding services.",
+      "Added and maintained automated coverage across unit, integration and SpecFlow acceptance tests for complex onboarding and compliance workflows.",
+      "Supported enterprise deployment and operational tooling including IIS-hosted Web API services, SQL DACPAC deployment scripts, service installation scripts, telemetry, logging and environment configuration.",
+      "Built an Angular 11 and TypeScript single-page application serving as the presentation layer for a Global Client Onboarding platform.",
+      "Integrated with multiple ASP.NET Web API services for case, client, risk, document, relationship, work item, snapshot and support operations.",
+      "Implemented modular feature areas including case management, legal entity onboarding, natural person onboarding, work queues, search, relationship management, dynamic risk modelling, document handling and support administration.",
+      "Used NGXS for client-side state management across complex onboarding workflows.",
+      "Built dynamic CDD and EDD risk assessment screens driven by backend risk model definitions, including reusable form controls for text, numeric, date, checkbox and grouped question inputs.",
+      "Developed role-based route protection using Angular guards for client owners, onboarding specialists, compliance officers, auditors, first-line monitors and support admins.",
+      "Implemented client ownership and relationship structure visualisation using GoJS.",
+      "Added Jest-based unit testing across services, models, routing and UI components.",
+      "Used Application Insights for frontend monitoring and global error handling.",
+      "Supported IIS deployment with production Angular builds, environment configuration and web.config routing support.",
       "Developer on a greenfield project to create a Client Onboarding / KYC application for the bank's global client base following domain driven design principles, microservices architecture and agile methodologies.",
       "Angular 5, SASS, webpack, Karma, Jasmine, Jest, C# Web API, Unity for DI, SpecFlow, MS Test, Dapper and TFS for CD/CI.",
     ],
@@ -211,6 +228,27 @@ export const experience = [
   },
 ];
 
+export const education = [
+  {
+    institution: "Queen's University Belfast",
+    detail: "Russell Group",
+    qualification: "BSc. Honours, Accountancy",
+    dates: "1997 - 2000",
+    notes: [
+      "QUB Judo Club - Treasurer",
+      "University Blues Awarded Athlete",
+      "Irish University Judo Champion 2000",
+    ],
+  },
+  {
+    institution: "St. Mary's Christian Brother Grammar Scholl",
+    detail: "A levels",
+    qualification: "Computers A, Economics A, Maths B",
+    dates: "",
+    notes: [],
+  },
+];
+
 export const awards = [
   {
     title: "Best Overall Hack - Santander Open Banking Hackathon 2018",
@@ -225,47 +263,148 @@ export const articles = [
   {
     slug: "filling-payments-gap-request-to-pay-psd2",
     title: "Filling a Payments Gap - Request to Pay and PSD2",
+    sourceUrl: "https://www.linkedin.com/pulse/filling-payments-gap-request-pay-psd2-neil-pimley",
     created: "2017-12-25",
     published: "2018-01-04",
     topic: "Open Banking, PSD2 and payments",
     excerpt:
       "An exploration of Request to Pay, direct debits, standing orders and the practical payment experience for consumers and retailers.",
+    summary:
+      "This piece examines the gap between standing orders and direct debits, then uses Request to Pay as a practical PSD2-era model for giving customers more control while still enabling merchants and service providers to collect money efficiently.",
+    sections: [
+      {
+        heading: "Why existing payment methods leave a gap",
+        body: "The article contrasts standing orders, where the account holder controls the amount and timing, with direct debits, where a company can collect variable amounts. The argument is that customers need a middle ground that preserves control without breaking the billing workflow for merchants and utilities.",
+      },
+      {
+        heading: "How Request to Pay changes the interaction",
+        body: "Request to Pay is presented as a new pattern in which a business sends a payment request and the customer explicitly accepts, rejects or amends it. The central idea is not just faster payment rails, but a negotiation-style payment flow that feels more aligned with modern digital banking.",
+      },
+      {
+        heading: "E-commerce and merchant economics",
+        body: "The article extends the concept from recurring bills into online checkout. It frames PSD2 and Open Banking as a route to lower transaction costs, quicker settlement and less dependence on card-based or wallet-based intermediaries, especially for large merchants moving significant volumes.",
+      },
+      {
+        heading: "Point-of-sale and adoption questions",
+        body: "The closing discussion looks at physical retail, contactless alternatives, NFC and QR-based flows. Rather than claiming a guaranteed winner, the article treats adoption as a product-and-experience problem where consumer behaviour will decide whether the model succeeds.",
+      },
+    ],
   },
   {
     slug: "strong-customer-authentication-psd2",
     title: "Strong Customer Authentication - PSD2",
+    sourceUrl: "https://www.linkedin.com/pulse/strong-customer-authentication-psd2-neil-pimley-1",
     created: "2018-01-10",
     published: "2018-01-10",
     topic: "Security and authentication",
     excerpt:
       "A plain-English look at strong customer authentication, multi-factor authentication and PSD2 security concerns.",
+    summary:
+      "This article translates the PSD2 security language around Strong Customer Authentication into practical terms, explaining the factor model behind modern banking login and approval journeys and why simple password-only access is not enough.",
+    sections: [
+      {
+        heading: "What strong authentication actually means",
+        body: "The piece starts by stripping away the jargon. It argues that strong authentication is about resistance to realistic attacks, not about adding arbitrary friction, and uses accessible examples to explain why a lone password does not meet that bar for banking.",
+      },
+      {
+        heading: "Knowledge, possession and inherence",
+        body: "The core of the article is the three-factor model: something you know, something you have and something you are. It walks through familiar implementations such as PINs, token devices, mobile apps and biometrics, then shows how combining independent factors creates a materially stronger control.",
+      },
+      {
+        heading: "Where two-factor authentication fits",
+        body: "It then maps the abstract factor model onto real consumer experiences such as text-message codes and app-based verification. The article treats two-factor authentication as a common implementation pattern rather than a separate concept from strong customer authentication.",
+      },
+      {
+        heading: "Practical security advice",
+        body: "The article closes with a usability and security warning: if one factor effectively contains the other, the protection is weaker than it looks. The takeaway is that independence between factors matters just as much as the number of prompts in the flow.",
+      },
+    ],
   },
   {
     slug: "open-banking-unexpected-twist-psd2",
     title: "Open Banking with Unexpect Twist - PSD2",
+    sourceUrl: "https://www.linkedin.com/pulse/open-banking-unexpect-twist-psd2-neil-pimley",
     created: "2018-01-19",
     published: null,
     topic: "REST APIs and Open Banking",
     excerpt:
       "A hands-on investigation into bank-account API access, bearer tokens, Postman and strong customer authentication expectations.",
+    summary:
+      "This article moves from high-level Open Banking commentary into hands-on API experimentation, using test and third-party tooling to examine how bank-account access behaves in practice and where implementation shortcuts can undermine the spirit of PSD2.",
+    sections: [
+      {
+        heading: "From theory to API experimentation",
+        body: "The article begins with the intention to go beyond commentary and make real API calls. It compares sandbox-style developer access with a third-party aggregation service and deliberately approaches the topic from an implementation and security perspective rather than a policy one.",
+      },
+      {
+        heading: "Authentication flow and token handling",
+        body: "A large part of the article documents the process of linking a bank account, obtaining a bearer token and then using Postman to query account data. The important observation is that once the token exists, the developer experience becomes trivially simple, which raises immediate questions about how strongly the session is really bound to the user or device.",
+      },
+      {
+        heading: "Security concern revealed by testing",
+        body: "The central finding is that passing the token to another person still allowed account-level access in at least one scenario, even if some deeper operations failed. The article treats that as a warning sign that convenience or reverse-engineered integration patterns can drift away from genuine strong customer authentication.",
+      },
+      {
+        heading: "Why implementation quality matters",
+        body: "The conclusion is not an anti-Open-Banking argument. Instead it argues that the quality of the implementation matters as much as the regulatory label: a system can appear modern and technically clever while still failing to meet the security expectations customers assume are in place.",
+      },
+    ],
   },
   {
     slug: "who-bought-what-when-and-where-psd2",
     title: "Who bought what, when and where - PSD2 Enhanced Data",
+    sourceUrl: "https://www.linkedin.com/pulse/who-bought-what-when-where-psd2-enhanced-data-neil-pimley",
     created: "2018-01-05",
     published: null,
     topic: "Payments data",
     excerpt:
       "A discussion of enhanced payment data and how richer transaction context could improve statement and retailer experiences.",
+    summary:
+      "This article focuses on the quality of payments data rather than the payment instruction itself, arguing that richer contextual information can make statements clearer for customers and more useful for merchants and service providers.",
+    sections: [
+      {
+        heading: "The problem with vague transaction lines",
+        body: "The opening point is simple: many card or bank-statement descriptions are technically correct but practically unhelpful. Customers often see merchant names or holding-company references that do not clearly explain where the money was actually spent.",
+      },
+      {
+        heading: "What enhanced data could add",
+        body: "The article introduces the idea of enhanced data as a way to link more descriptive metadata to a payment. That could include clearer merchant identity and other context that makes it easier for customers to interpret their statements without mentally reconstructing the transaction.",
+      },
+      {
+        heading: "Why this matters beyond convenience",
+        body: "Although the article is short, the underlying argument is broader than statement readability. Better data can improve trust, reduce confusion, help with dispute resolution and create stronger downstream experiences for both banks and merchants.",
+      },
+    ],
   },
   {
     slug: "psd2-retail-banking-customers",
     title: "I've just agreed to what?! PSD2 and Retail Banking Customers",
+    sourceUrl: "https://www.linkedin.com/pulse/ive-just-agreed-what-neil-pimley",
     created: "2017-12-15",
     published: "2017-12-18",
     topic: "Retail banking and PSD2",
     excerpt:
       "A customer-focused introduction to PSD2, open banking, third-party account access and payment initiation.",
+    summary:
+      "This article introduces PSD2 from a customer point of view, using the language of ordinary banking behaviour rather than regulation. It explains why banks were changing their terms and why third-party access was being positioned as a customer-experience opportunity rather than just a compliance burden.",
+    sections: [
+      {
+        heading: "Why the updated banking terms mattered",
+        body: "The article starts from a familiar moment: customers receiving updated terms and conditions emails that they rarely read. It uses that moment to highlight how significant the PSD2 changes really were, especially the idea that third parties could access account information and initiate payments.",
+      },
+      {
+        heading: "The convenience case for Open Banking",
+        body: "A major theme is aggregation. The article explains that customers often spread their financial lives across several institutions and could benefit from a single application or service that presents a consolidated view rather than forcing them to maintain multiple banking apps and multiple sets of credentials.",
+      },
+      {
+        heading: "Why banks and non-banks both care",
+        body: "The article also frames PSD2 as a competitive opening. Banks with stronger digital experiences could gain more engagement, while non-bank or retail platforms could build account-aware payment and insight features once the data and initiation rails were made available.",
+      },
+      {
+        heading: "From data access to payment initiation",
+        body: "The piece finishes by pointing toward the next wave of disruption: third parties not just reading data but initiating payments. That sets up the later articles on Request to Pay and broader payment transformation.",
+      },
+    ],
   },
 ];
 
@@ -288,8 +427,8 @@ export const projects = [
     title: "Rabobank Client Onboarding / KYC",
     type: "Enterprise Banking",
     detail:
-      "Greenfield Client Onboarding / KYC application for a global client base using domain driven design, microservices architecture and agile methodologies.",
-    tags: ["C# Web API", "Angular", "Microservices", "DDD"],
+      "Global client onboarding and case-management platform spanning ASP.NET Web API services, Angular SPA delivery, KYC and AML workflows, domain events, dynamic risk modelling and regulated onboarding operations.",
+    tags: ["ASP.NET Web API", "Angular", "NGXS", "KYC / AML"],
   },
   {
     title: "CIS Oncology Re-platforming",
@@ -297,5 +436,38 @@ export const projects = [
     detail:
       "Re-platformed a legacy Visual FoxPro application into a mobile optimized HTML5 application with .NET, MVC, C# and SQL Server.",
     tags: ["Healthcare", "TypeScript", ".NET MVC", "SQL Server"],
+  },
+];
+
+export const personalProjects = [
+  {
+    title: "McKenzies Construction",
+    url: "https://www.mckenziesconstruction.co.uk/",
+    type: "Personal Project",
+    detail:
+      "Built and maintained a brochure and lead-generation website for McKenzies Construction, covering services, project galleries, company details and customer enquiries.",
+    technicalDetail:
+      "The current codebase is an Angular 18 single-page application with TypeScript, Bootstrap 5, Bootstrap Icons, router-based gallery pages, reactive enquiry forms and production build output for a live business website.",
+    tags: ["Angular 18", "TypeScript", "Bootstrap", "Lead generation"],
+  },
+  {
+    title: "Fleming Judo School",
+    url: "https://www.flemingjudoschool.co.uk/",
+    type: "Personal Project",
+    detail:
+      "Built and maintained a marketing website for Fleming Judo School focused on primary-school judo classes, programme information, sign-up journeys and contact pages.",
+    technicalDetail:
+      "The local codebase is an Angular 15 application with TypeScript, Bootstrap, routed content pages for about, offer, signup and contact, and a school-facing presentation layer for a live judo website.",
+    tags: ["Angular 15", "TypeScript", "Bootstrap", "Education / Sport"],
+  },
+  {
+    title: "Bann Architectural Systems",
+    url: "https://bannsrchitectural.netlify.app/",
+    type: "Personal Project",
+    detail:
+      "Built and maintained a marketing website for Bann Architectural Systems covering aluminium glazing products, projects, latest news, company information and contact details.",
+    technicalDetail:
+      "The local implementation is an Eleventy 3 site using Nunjucks templates, structured JSON data, Netlify deployment and Decap CMS support for content editing through an admin interface.",
+    tags: ["Eleventy", "Nunjucks", "Netlify", "Decap CMS"],
   },
 ];
