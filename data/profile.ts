@@ -1,12 +1,12 @@
 export const profile = {
   name: "Neil Pimley",
-  headline: "Agentic Software Engineer",
+  headline: "IT Contractor | Full-Stack Software Engineer",
   location: "Greater London, England, United Kingdom",
   industry: "Software Development",
   summary:
-    "Fullstack developer with 20 years' experience in the fintech and healthcare sectors in both large corporations and startups; experience with scrum and agile methodologies delivering functionality to production in short sprints. Extensive experience delivering solutions both on the .NET platform and using multiple JavaScript frameworks and libraries. Skilled in UI development, web services, databases, OO design following SOLID principles, systems integration and implementation of significant projects from both an applications development and business process perspective.",
+    "Full-stack software engineer with 25 years' experience delivering production systems across fintech, healthcare, commodity trading and owner-led businesses. Recent project work includes Angular and .NET enterprise supply-chain platforms, cloud-native CRM integrations with Salesforce and Azure, regulated client onboarding and KYC services, healthcare application re-platforming, and independent websites for construction, sport, architecture and private cardiology clients. Strong across .NET, JavaScript and TypeScript front ends, APIs, databases, cloud integration, CI/CD, diagnostics and pragmatic delivery from business process through to production support.",
   facts: [
-    "20 years' experience in fintech and healthcare",
+    "25 years' experience across fintech, healthcare, commodity trading and independent web delivery",
     "Large corporation and startup environments",
     "Scrum and agile delivery in short production-focused sprints",
     ".NET platform delivery",

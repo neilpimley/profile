@@ -6,7 +6,7 @@ import { articles, awards, education, experience, personalProjects, profile, pro
 const navItems = ["Profile", "Experience", "Education", "Projects", "Personal", "Writing", "Contact"];
 
 const metrics = [
-  { label: "Years in software", value: "20+" },
+  { label: "Years in software", value: "25+" },
   { label: "Regulated sectors", value: "2" },
   { label: "Core delivery themes", value: "8" },
   { label: "Published articles", value: String(articles.length).padStart(2, "0") },
@@ -66,7 +66,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="max-w-5xl text-5xl font-semibold leading-[0.96] text-[var(--foreground)] md:text-7xl lg:text-[5.6rem]">
+          <h1 className="max-w-5xl text-4xl font-semibold leading-[1.02] text-[var(--foreground)] md:text-6xl lg:text-[4.8rem]">
             Building enterprise software for trading, banking, healthcare and large-scale integration.
           </h1>
 
@@ -120,7 +120,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="animate-enter-delayed">
+        <div className="animate-enter-delayed lg:-mt-10">
           <div className="panel-edge overflow-hidden rounded-md">
             <div className="panel-surface p-6">
               <div className="mb-6 overflow-hidden rounded-md border border-white/10 bg-black/20">
@@ -342,7 +342,7 @@ export default function Home() {
         <div className="mb-12 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
             <p className="section-kicker">Personal Projects</p>
-            <h2 className="section-title">Independent web work outside enterprise delivery</h2>
+            <h2 className="section-title">Independent side projects</h2>
           </div>
           <p className="max-w-xl text-sm leading-6 text-[var(--muted)]">
             This section is kept separate from large commercial platforms so smaller owner-led
