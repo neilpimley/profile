@@ -62,7 +62,7 @@ export default function Home() {
               {profile.headline}
             </span>
             <span className="rounded-full border border-white/10 bg-white/6 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">
-              Based in Belfast · Remote in Greater London
+              Based in Belfast · Hybrid working in Central London
             </span>
           </div>
 
