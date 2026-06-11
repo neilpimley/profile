@@ -441,6 +441,16 @@ export const projects = [
 
 export const personalProjects = [
   {
+    title: "Belfast Cardiology Clinic",
+    url: "https://www.belfastcardiologist.com/",
+    type: "Personal Project",
+    detail:
+      "Built and maintained a website for Belfast Cardiology Clinic and Dr. Peter McKavanagh, covering consultant profile information, patient guidance, contact details and booking journeys.",
+    technicalDetail:
+      "The live site is a React single-page application with Bootstrap 5 styling, Google Maps integration, Google Analytics and conversion tracking for phone and enquiry interactions.",
+    tags: ["React", "Bootstrap 5", "Google Maps", "Healthcare"],
+  },
+  {
     title: "McKenzies Construction",
     url: "https://www.mckenziesconstruction.co.uk/",
     type: "Personal Project",
